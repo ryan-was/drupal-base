@@ -1,0 +1,24 @@
+# Ignore configuration files that may contain sensitive information.
+web/sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+web/sites/*/private
+
+web/*
+
+# Vagrant
+bin
+.vagrant
+.idea
+.DS_Store
+web/app/bps-backup/
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Vendor (e.g. Composer)
+vendor
+!vendor/.gitkeep
