@@ -5,7 +5,7 @@
   "scripts": {
     "post-install-cmd": [
       "./vendor/drush/drush/drush dl drupal-7.x --drupal-project-rename=web --yes",
-      "cd web && ../vendor/drush/drush/drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://homestead:secret@localhost/entrepreneurship --yes",
+      "cd web && ../vendor/drush/drush/drush site-install standard --account-name=admin --account-pass=admin --db-url=mysql://username:password@localhost/database --yes",
       "../vendor/drush/drush/drush en -y webform",
       "../vendor/drush/drush/drush en -y ckeditor",
       "../vendor/drush/drush/drush en -y bootstrap",
